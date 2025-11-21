@@ -103,7 +103,6 @@ tables_sql = [
         id_makanan     INTEGER,
         kuantitas      INTEGER,
         harga_satuan   DECIMAL,
-        
         subtotal       DECIMAL,
         FOREIGN KEY (id_transaksi) REFERENCES transaksi(id_transaksi),
         FOREIGN KEY (id_makanan) REFERENCES makanan(id_makanan)

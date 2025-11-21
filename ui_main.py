@@ -36,10 +36,11 @@ class MainUI:
         # ================================
         # LIST MAKANAN
         # ================================
-        self.tree = ttk.Treeview(root, columns=("nama", "harga", "kategori"), show="headings", height=10)
-        self.tree.heading("nama", text="Nama Makanan")
-        self.tree.heading("harga", text="Harga")
+        self.tree = ttk.Treeview(root, columns=("nama_makanan", "harga_default", "kategori", "nama_gambar"), show="headings", height=10)
+        self.tree.heading("nama_makanan", text="Nama Makanan")
+        self.tree.heading("harga_default", text="Harga")
         self.tree.heading("kategori", text="Kategori")
+        self.tree.heading("nama_gambar", text="Gambar")
 
         self.tree.pack(pady=10)
 
