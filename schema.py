@@ -1,7 +1,7 @@
 import sqlite3
 
 # Nama database
-DB_NAME = "toko_makanan.db"
+DB_NAME = "pemesanan_makanan.db"
 
 # Koneksi
 conn = sqlite3.connect(DB_NAME)
@@ -22,7 +22,7 @@ tables_sql = [
     """
     CREATE TABLE IF NOT EXISTS makanan (
         id_makanan     INTEGER PRIMARY KEY,
-        nama_makanan           VARCHAR(50),
+        nama_makanan   VARCHAR(50),
         harga_default  DECIMAL,
         kategori       VARCHAR(50)
     );
