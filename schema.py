@@ -24,7 +24,8 @@ tables_sql = [
         id_makanan     INTEGER PRIMARY KEY,
         nama_makanan   VARCHAR(50),
         harga_default  DECIMAL,
-        kategori       VARCHAR(50)
+        kategori       VARCHAR(50),
+        nama_gambar    TEXT
     );
     """,
 
