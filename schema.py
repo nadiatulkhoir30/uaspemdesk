@@ -22,7 +22,7 @@ tables_sql = [
     """
     CREATE TABLE IF NOT EXISTS makanan (
         id_makanan     INTEGER PRIMARY KEY,
-        nama           VARCHAR(50),
+        nama_makanan           VARCHAR(50),
         harga_default  DECIMAL,
         kategori       VARCHAR(50)
     );
@@ -34,7 +34,7 @@ tables_sql = [
     """
     CREATE TABLE IF NOT EXISTS pembeli (
         id_pembeli     INTEGER PRIMARY KEY,
-        nama           VARCHAR(50),
+        nama_pembeli          VARCHAR(50),
         no_hp          VARCHAR(50)
     );
     """,
@@ -45,7 +45,7 @@ tables_sql = [
     """
     CREATE TABLE IF NOT EXISTS kasir (
         id_kasir   INTEGER PRIMARY KEY,
-        nama       VARCHAR(50),
+        nama_kasir     VARCHAR(50),
         username   VARCHAR(30)
     );
     """,
@@ -69,10 +69,9 @@ tables_sql = [
     """
     CREATE TABLE IF NOT EXISTS diskon_voucher (
         id_voucher   INTEGER PRIMARY KEY,
-        nama         VARCHAR(50),
-        type         TEXT CHECK(type IN ('persen', 'nominal')),
+        nama_voucher         VARCHAR(50),
         nilai        DECIMAL,
-        keterangan   TEXT
+        kode_voucher   TEXT
     );
     """,
 
