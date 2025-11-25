@@ -119,3 +119,4 @@ conn.commit()
 conn.close()
 
 print(f"Database '{DB_NAME}' berhasil dibuat dengan semua tabel!")
+

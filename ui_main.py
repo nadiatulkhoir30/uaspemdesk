@@ -78,7 +78,7 @@ class MainUI:
 
         # Insert rows
         for d in self.data:
-            self.tree.insert("", tk.END, values=(d["nama_makanan"], d["harga_default"], d["kategori"]))
+            self.tree.insert("", tk.END, values=(d["nama_makanan"], d["harga_default"], d["kategori"], d["nama_gambar"]))
 
     # ================================
     # NAVIGASI LIST MAKANAN
@@ -119,5 +119,5 @@ class MainUI:
         item = self.data[self.index_now]
         messagebox.showinfo(
             "Ditambahkan",
-            f"{jumlah}x {item['nama']} berhasil ditambahkan!"
+            f"{jumlah}x {item['nama_makanan']} berhasil ditambahkan!"
         )
